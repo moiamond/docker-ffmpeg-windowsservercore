@@ -1,8 +1,8 @@
 FROM moiamond/ffmpeg-base-windowsservercore:0.1
 MAINTAINER moiamond@gmail.com
 
-COPY bin c:/workdir/
+COPY bin c:/ffmpeg/
 
-WORKDIR c:\\workdir
-CMD         ["--help"]
-ENTRYPOINT  ["ffmpeg"]
+RUN setx /M PATH "%PATH%;c:\\ffmpeg"
+
+
