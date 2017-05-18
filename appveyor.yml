@@ -10,10 +10,10 @@ install:
   - ps: docker version
 
 build_script:  
-  - ps: build.ps1
+  - ps: .\build.ps1
 
 test_script:  
-  - ps: test.ps1
+  - ps: .\test.ps1
 
 deploy_script:  
-  - ps: deploy.ps1
+  - ps: .\deploy.ps1
